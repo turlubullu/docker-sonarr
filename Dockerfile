@@ -1,8 +1,8 @@
-FROM lsiobase/xenial
+FROM lsiobase/xenial 
 MAINTAINER sparklyballs
 
 # set environment variables
-ARG DEBIAN_FRONTEND="noninteractive"
+RUN export DEBIAN_FRONTEND='noninteractive'
 
 # add sonarr repository
 RUN \
